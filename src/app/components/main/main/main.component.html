@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container container-background" [ngClass]="{'container-background-2': !condition}" >
   <div *ngIf="condition" class="now_batting__title">
     <div><img src="../../../../assets/gallery/Group.png" alt="group"></div>
     <div>Now Betting</div>
@@ -17,7 +17,7 @@
   <div *ngIf="!condition" class="event">EVENT</div>
 
   <div class="question">
-    <div class="question_text">
+    <div class="question_text" [ngClass]="{question_text2: !condition}">
       <p>{{data.question}}</p>
     </div>
   </div>

@@ -16,7 +16,6 @@ export class MainComponent implements OnInit {
   answer: any;
 
   constructor(private activatedRoute: ActivatedRoute, private formBuilder: FormBuilder) {
-    this.data = this.activatedRoute.snapshot.data.data;
 
 
     this.answerForm = formBuilder.group({
@@ -25,6 +24,7 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.data = this.activatedRoute.snapshot.data.data;
   }
 
   changeCondition(): void {

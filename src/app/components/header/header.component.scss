@@ -17,6 +17,10 @@
 .logo {
   margin-left: 16px;
   cursor: pointer ;
+  & img {
+    width: 96px;
+    height: 49px;
+  }
 }
 
 .logo:focus {

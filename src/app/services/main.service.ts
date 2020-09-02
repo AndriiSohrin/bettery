@@ -13,6 +13,6 @@ export class MainService {
   }
 
   getPost(): Observable<Model> {
-    return this.http.post<any>('http://13.229.200.135/privateEvents/get_by_id', {id: 457396837154817}, {responseType: 'json'});
+    return this.http.post<Model>('http://13.229.200.135/privateEvents/get_by_id', {id: 457396837154817}, {responseType: 'json'});
   }
 }

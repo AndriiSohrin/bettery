@@ -32,6 +32,7 @@ hr {
 
 .now_batting__title img {
   padding-right: 8px;
+  width: 26px;
 }
 
 .login_name {
@@ -83,6 +84,9 @@ hr {
 .question_text {
   width: 67%;
   margin: 29px auto;
+}
+.question_text2{
+  margin: 7px auto;
 }
 
 .answers {
@@ -216,6 +220,8 @@ hr {
     border-radius: 8px;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
+    border: none;
   }
 }
 

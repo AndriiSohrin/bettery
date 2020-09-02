@@ -77,6 +77,11 @@ input:focus:-ms-input-placeholder {
 .btn_comment {
   width: 24px;
   height: 24px;
+
+  & img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .input button {
@@ -84,9 +89,8 @@ input:focus:-ms-input-placeholder {
   border: 1px solid transparent;
   margin-top: 5px;
   cursor: pointer;
-}
 
-/*========COMMENTS=========*/
+}
 
 .comments_card :first-child {
   display: flex;
@@ -108,13 +112,14 @@ input:focus:-ms-input-placeholder {
   padding-top: 3px;
   padding-left: 10px;
 }
-.comment_initial{
-  padding: 0 19px ;
+
+.comment_initial {
+  padding: 0 19px;
   display: flex;
   align-items: center;
 }
 
-.comment_text{
-  padding: 0 14px 35px 56px ;
+.comment_text {
+  padding: 0 14px 35px 56px;
   opacity: 0.7;
 }
