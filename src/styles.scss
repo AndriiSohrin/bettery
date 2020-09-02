@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-color: #242521;
+  max-width: 375px;
+  margin: auto;
+}
+

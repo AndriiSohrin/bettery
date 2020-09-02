@@ -1,0 +1,42 @@
+<div>
+  <div class="input">
+    <form action="#" [formGroup]="commentsForm">
+      <div>
+        <input formControlName="newComment" name="newComment" type="text" placeholder="Add a comment...." id="comments">
+      </div>
+      <div class="btn_comment">
+       <button type="submit"><img src="../../../../assets/gallery/send.png" alt="send" (click)="addComment(commentsForm)"></button>
+      </div>
+    </form>
+  </div>
+  <div class="comments">
+    <div class="comments_card">
+      <div class="comment_initial">
+       <div>
+         <div><img src="./assets/gallery/avatar.png" alt="avatar"></div>
+         <div class="author_name">Jenna Logan</div>
+       </div>
+        <div class="comment_date">1 day ago</div>
+      </div>
+      <div class="comment_text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at consequuntur cupiditate delectus
+        deleniti deserunt dolores exercitationem
+      </div>
+    </div>
+  </div>
+  <div class="comments">
+    <div class="comments_card">
+      <div class="comment_initial">
+        <div>
+          <div><img src="./assets/gallery/avatar.png" alt="avatar"></div>
+          <div class="author_name">Jenna Logan</div>
+        </div>
+        <div class="comment_date">1 day ago</div>
+      </div>
+      <div class="comment_text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at consequuntur cupiditate delectus
+        deleniti deserunt dolores exercitationem
+      </div>
+    </div>
+  </div>
+</div>

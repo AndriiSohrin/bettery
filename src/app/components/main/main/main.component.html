@@ -1,0 +1,84 @@
+<div class="container">
+  <div *ngIf="condition" class="now_batting__title">
+    <div><img src="../../../../assets/gallery/Group.png" alt="group"></div>
+    <div>Now Betting</div>
+  </div>
+  <div *ngIf="condition" class="event_ends">
+    Event ends in {{data.startTime | date: 'dd:hh:mm:ss'}}
+  </div>
+  <div *ngIf="!condition" class="now_batting__title">
+    <div class="login_name">
+      <div>
+        <h3>Tony,</h3>
+        <p>you’re joining as an <span>Player</span></p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!condition" class="event">EVENT</div>
+
+  <div class="question">
+    <div class="question_text">
+      <p>{{data.question}}</p>
+    </div>
+  </div>
+
+  <form action="#" [formGroup]="answerForm">
+    <div class="answers" *ngFor="let p of data.answers">
+      <div class="answers_item" *ngIf="condition">{{p}}</div>
+      <div class="answers_item" *ngIf="!condition">
+        <div class="pretty p-default p-round ">
+          <input formControlName="answer" type="radio" name="answer" value="{{p}}">
+          <div class="state">
+            <label><b>{{p}}</b></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div *ngIf="condition" class="resolution_details">
+    Resolution details: <span>www.cnn.com</span>
+  </div>
+
+  <div>
+    <div class="winner_get">
+      <div class="winner_get_left">
+        <div class="winner_get_left_top">WINNER GET:</div>
+        <div>LOSERS AGREE TO</div>
+      </div>
+      <div class="winner_get_right">
+        <div class="winner_get_right_top">{{data.winner}}</div>
+        <div class="winner_get_right_bottom">SHARE THE BILL</div>
+      </div>
+    </div>
+  </div>
+  <hr *ngIf="condition">
+  <app-join-as-button [data]="data" *ngIf="condition"></app-join-as-button>
+
+  <div class="time-left" *ngIf="condition">Time left : <span>{{data.endTime | date: 'dd'}} </span>days
+    <span>{{data.endTime | date: 'hh'}} </span>
+    hours <span>{{data.endTime | date: 'mm'}} </span>minutes
+  </div>
+  <div class="btn">
+    <button *ngIf="condition" (click)="changeCondition()"> JOIN AS PLAYER</button>
+  </div>
+  <div *ngIf="condition">
+    <div class="whats_player"><a href="#">Whats is a Player?</a></div>
+    <hr>
+  </div>
+
+  <app-comments *ngIf="condition"></app-comments>
+
+  <div *ngIf="!condition">
+    <div class="results_mail">
+      <p>We’ll notify the results to your email</p>
+      <p><span>nguyennguyen@bettery.io</span></p>
+    </div>
+    <div class="two_button">
+      <div>
+        <button (click)="changeCondition()">Back</button>
+      </div>
+      <button class="btn_bet" (click)="sendAnswer(answerForm)" [disabled]="answerForm.invalid">Bet</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,238 @@
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+
+$primary-color: #FFFFFF;
+$secondary-color: #0B1511;
+$warning_color: #FFD300;
+$danger-color: #FF0000;
+$success-color: #7BBD69;
+$info-color: #34DDDD;
+
+hr {
+  width: 90%;
+  opacity: 0.5;
+  background-color: #B6B6B6;
+  margin: 0 auto;
+}
+
+.now_batting__title {
+  width: 100%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $warning_color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 0 3px 0;
+}
+
+.now_batting__title img {
+  padding-right: 8px;
+}
+
+.login_name {
+  color: $primary-color;
+  text-transform: none;
+  background-color: $secondary-color;
+  width: 91.5%;
+  border-radius: 8px;
+  & h3 {
+    font-size: 24px;
+  }
+  & span {
+    color: $info-color;
+  }
+  & div {
+    margin: 13px auto 23px auto;
+  }
+}
+
+.event{
+  color: $primary-color;
+  font-weight: bold;
+  margin: 40px 0 8px 16px;
+}
+
+.event_ends {
+  text-align: center;
+  padding-bottom: 24px;
+  color: $primary-color;
+
+  font-size: 14px;
+}
+
+.question {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $warning_color;
+  background-color: $secondary-color;
+  width: 91.5%;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.question_text {
+  width: 67%;
+  margin: 29px auto;
+}
+
+.answers {
+  color: $primary-color;
+}
+
+.answers_item {
+  width: 91.5%;
+  height: 48px;
+  background-color: $secondary-color;
+  border-radius: 8px;
+  margin: 8px auto;
+  padding-top: 14px;
+  padding-left: 26px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.state{
+  min-width: 343px;
+
+  & label{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.resolution_details {
+  width: 91.5%;
+  height: 48px;
+  border-radius: 8px;
+  margin: 8px auto;
+  background-color: #404040;
+  text-align: center;
+  color: $primary-color;
+  padding-top: 14px;
+  font-size: 14px;
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.winner_get {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.winner_get_left {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  color: $primary-color;
+}
+.winner_get_left_top{
+  margin-bottom: 16px;
+}
+
+.winner_get_right {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  text-align: right;
+}
+
+.winner_get_right_bottom {
+  color: $danger-color;
+}
+
+.winner_get_right_top {
+  color: $success-color;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.time-left {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+  padding-bottom: 8px;
+}
+
+.time-left span {
+  font-weight: bold
+}
+
+.btn {
+  text-align: center;
+
+  & button {
+    width: 343px;
+    height: 48px;
+    cursor: pointer;
+    background: #34DDDD;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.whats_player {
+  text-align: center;
+  padding-bottom: 33px;
+  padding-top: 8px;
+
+  & a {
+    color: $info-color;
+    font-size: 12px;
+  }
+}
+
+.two_button {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 16px 30px 16px;
+
+  & button {
+    width: 164px;
+    height: 48px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.btn_bet {
+  background-color: $info-color;
+}
+
+.results_mail{
+  color: $primary-color;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 39px;
+  & p {
+    opacity: 0.6;
+  }
+  & span{
+    font-weight: bold;
+  }
+}
+

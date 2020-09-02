@@ -1,0 +1,120 @@
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+form input {
+  background: #545454;
+  height: 48px;
+  width: 289px;
+  margin-right: 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: none;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+
+form input::placeholder {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn_comment {
+  width: 24px;
+  height: 24px;
+}
+
+.input button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/*========COMMENTS=========*/
+
+.comments_card :first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comments_card {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+
+  color: #C4C4C4;
+}
+
+.author_name {
+  color: #FFFFFF;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+.comment_initial{
+  padding: 0 19px ;
+  display: flex;
+  align-items: center;
+}
+
+.comment_text{
+  padding: 0 14px 35px 56px ;
+  opacity: 0.7;
+}
